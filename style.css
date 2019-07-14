@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barriecito", cursive;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 20px;
+}
+
+.pads {
+  background: blue;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+#keypress {
+  text-align: center;
+  margin: -20px 0px 30px 0px;
+}
+
+.pad1 {
+  background: red;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+.pad1 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.pad2 {
+  background: orangered;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+
+.pad2 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.pad3 {
+  background: orange;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+
+.pad3 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.pad4 {
+  background: green;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+
+.pad4 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.pad5 {
+  background: greenyellow;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+
+.pad5 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.pad6 {
+  background: yellow;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: white;
+}
+
+.pad6 h3 {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  border-style: dotted;
+  border-color: white;
+  border-width: 3px;
+  z-index: -1;
+}
